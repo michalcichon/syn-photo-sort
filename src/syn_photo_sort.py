@@ -100,7 +100,7 @@ def handleFileMove(f, filename, fFmtName, problems, move, sourceDir, destDir, er
     fHash = None
     
     destFileName = pDate.strftime(fFmtName)
-    thisDestDir = destDir + '/%04d/%02d/%02d%s%04d' % (yr, mo, day, moTxt, yr)
+    thisDestDir = destDir + '/%04d/%02d' % (yr, mo)
     
     if not os.path.exists(thisDestDir):
       os.makedirs(thisDestDir)
