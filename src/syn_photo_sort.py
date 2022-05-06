@@ -194,7 +194,7 @@ def main(argv):
   filenameFmt = "%Y%m%d-%H%M%S"
 
   # File Extensions we care about
-  photoExtensions = ['.JPG', '.PNG', '.THM', '.CR2', '.NEF', '.DNG', '.RAW', '.NEF', '.JPEG']
+  photoExtensions = ['.JPG', '.PNG', '.THM', '.CR2', '.NEF', '.DNG', '.RAW', '.NEF', '.JPEG', '.HEIC']
   videoExtensions = ['.3PG', '.MOV', '.MPG', '.MPEG', '.AVI', '.3GPP', '.MP4']
   
   scanExtensions = photoExtensions
