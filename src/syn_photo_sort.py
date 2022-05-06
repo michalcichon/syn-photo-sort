@@ -174,8 +174,8 @@ def main(argv):
   sourceDir = args.source
   destDir = args.destination
   scanType = args.type.upper()
-  if(scanType != 'PHOTO' and scanType != 'VIDEO'):
-    print "Incorrect type specified! Must be either 'photo' or 'video'"
+  if(scanType != 'PHOTO' and scanType != 'VIDEO' and scanType != 'ALL'):
+    print "Incorrect type specified! Must be either 'photo' or 'video' or 'all'"
     sys.exit(1)
   
   errorDir = destDir + '/Unsorted/'
@@ -200,6 +200,8 @@ def main(argv):
   scanExtensions = photoExtensions
   if(scanType == 'VIDEO'):
     scanExtensions = videoExtensions
+  if(scanType == 'ALL'):
+    scanExtensions = photoExtensions + videoExtensions
 
   # The problem files.
   problems = []
