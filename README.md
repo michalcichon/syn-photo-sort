@@ -11,10 +11,9 @@ The destination structure looks like he following:
 Dest/
   2015/
     02/
-      02FEB2015/
-        20150202-183511.jpg
-        20150202-183511-0001.jpg
-        20150202-193501.jpg
+      20150202-183511.jpg
+      20150202-183511-0001.jpg
+      20150202-193501.jpg
 ```
 
 
@@ -37,7 +36,7 @@ optional arguments:
 The source directory is scanned recursively, for whatever kind of file you specified via the type flag of "photo" or 
 "video".  The types and extensions are as follows:
 
- * photo: `'.JPG', '.PNG', '.THM', '.CR2', '.NEF', '.DNG', '.RAW', '.NEF', '.JPEG'`
+ * photo: `'.JPG', '.PNG', '.THM', '.CR2', '.NEF', '.DNG', '.RAW', '.NEF', '.JPEG', '.HEIC'`
  * video: `'.3PG', '.MOV', '.MPG', '.MPEG', '.AVI', '.3GPP', '.MP4'`
 
 If you specify the `-m` or `--move` flag, it will move the source file to its intended destination and delete it from 
